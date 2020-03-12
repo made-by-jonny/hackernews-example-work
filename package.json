@@ -1,0 +1,42 @@
+{
+  "name": "hackernews-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test:coverage": "jest --coverage",
+    "test": "jest --watch",
+    "dev": "next",
+    "build": "next build",
+    "start": "node server.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "husky": "^4.2.3",
+    "metascraper": "^5.11.6",
+    "next": "^9.3.0",
+    "open-graph-scraper": "^3.6.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "sass": "^1.26.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass|css?raw)$": "identity-obj-proxy"
+    }
+  }
+}

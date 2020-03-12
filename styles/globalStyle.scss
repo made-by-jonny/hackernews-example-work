@@ -1,0 +1,14 @@
+body {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.01rem;
+}
+
+.card-list {
+  overflow-x: auto;
+  padding: 1rem 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
