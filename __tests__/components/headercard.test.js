@@ -15,7 +15,7 @@ const post = {
   url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
 };
 
-test("BlockCatd renders without error", async () => {
+test("HeaderCard renders without error", async () => {
   const { container } = render(<HeaderCard {...post} />);
   const title = container.querySelector("a > span").textContent;
 

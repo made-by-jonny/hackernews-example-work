@@ -1,12 +1,12 @@
 # Hackernews example code
 
-## dev instructions
+## Dev instructions
 
 - pull repo
 - npm install
 - npm run dev
 
-## deployment instructions
+## Deployment instructions
 
 Easiest way to deploy the code base is through [Zeit's Now ](https://zeit.co)
 
