@@ -6,7 +6,7 @@ const HeaderCard = ({ title, url, comments, published_at, author, index }) => (
   <li key={title} data-index={index} className={styles.card}>
     <span className={styles.author}>{author}</span>
     <a href={url}>
-      <span className={styles.heading}>{title}</span>
+      <h3 className={styles.heading}>{title}</h3>
       <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
     </a>
     <section>

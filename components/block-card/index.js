@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const BlockCard = ({ url, title, published_at, comments, author }) => (
   <li key={title} className={styles.blockCard}>
     <a href={url}>
-      <span>{title}</span>
+      <h3>{title}</h3>
       <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
     </a>
     <section>

@@ -17,7 +17,7 @@ const post = {
 
 test("BlockCard renders without error", async () => {
   const { container } = render(<BlockCard {...post} />);
-  const title = container.querySelector("a > span").textContent;
+  const title = container.querySelector("a > h3").textContent;
 
   expect(title).toBe(post.title);
 });
