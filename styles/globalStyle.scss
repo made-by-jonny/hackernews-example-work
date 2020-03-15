@@ -1,14 +1,63 @@
 body {
-  background: #fff;
+  background: #f9f8f2;
   padding: 0;
   margin: 0;
   letter-spacing: 0.01rem;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #3a3a39;
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
-.card-list {
-  overflow-x: auto;
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+a {
+  color: #3a3a39;
+  &:hover {
+    color: #000;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: poynter-oldstyle-text, serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.03rem;
+}
+
+.heading {
+  margin-left: 10px;
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.block-list {
   padding: 1rem 0;
   margin: 0;
-  display: flex;
   list-style: none;
+  font-family: poynter-oldstyle-text, serif;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+@media (min-width: 1000px) {
+  #__next {
+    max-width: 1075px;
+    width: 70%;
+    margin: 0 auto;
+  }
 }

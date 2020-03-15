@@ -1,0 +1,99 @@
+.card {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 20%;
+  margin: 0.5rem;
+  background: #db6344;
+  color: #000;
+  min-height: 230px;
+  min-width: 200px;
+  padding: 1rem;
+  overflow: hidden;
+  .heading {
+    margin: 0;
+    flex: 2;
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: poynter-oldstyle-text, serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.03rem;
+  }
+  i {
+    text-align: right;
+    flex: 1;
+    font-size: 2rem;
+  }
+  a {
+    color: #000;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+      display: none;
+    }
+  }
+  section {
+    padding-top: 10px;
+    border-top: 1px solid #000;
+    font-size: 0.8rem;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    > * {
+      flex: 1;
+    }
+    i {
+      font-size: inherit;
+      margin-right: 5px;
+    }
+    span {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .author {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: lighten(#db6344, 20%);
+  }
+  &:before {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    z-index: 0;
+    content: attr(data-index);
+    font-size: 17rem;
+    opacity: 0.2;
+    font-family: "Courier New", Courier, monospace;
+    color: lighten(#db6344, 15%);
+  }
+
+  @media (min-width: 826px) {
+    flex: 1;
+    margin: 0.5rem;
+    a {
+      flex-direction: row;
+      align-items: flex-start;
+      i {
+        display: block;
+      }
+    }
+    &:first-child {
+      min-width: 98.3%;
+      .heading {
+        font-size: 2rem;
+      }
+    }
+  }
+}

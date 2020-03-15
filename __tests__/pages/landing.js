@@ -119,9 +119,9 @@ describe("landing page tests", () => {
     const genericPosts = [...container.querySelectorAll("#read-more-list li")]
       .length;
 
-    expect(h1Text).toEqual("Hackernews");
+    expect(h1Text).toEqual("Latest News");
     expect(veryLatest).toEqual(4);
-    expect(genericPosts).toEqual(12);
+    expect(genericPosts).toEqual(8);
   });
 
   test("landing page should runs without posts doesn't error", async () => {

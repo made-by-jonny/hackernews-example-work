@@ -1,0 +1,21 @@
+.primaryHeader {
+  display: flex;
+  width: 100%;
+  margin: 40px 0;
+  font-family: poynter-oldstyle-text, serif;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1.4rem;
+  &::before {
+    content: "";
+    display: block;
+    padding-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/images/hackernews-logo.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+}

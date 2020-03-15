@@ -1,0 +1,30 @@
+.blockCard {
+  padding: 20px 20px;
+  border-bottom: 1px solid #f1f1f1;
+  &:last-child {
+    border: 0;
+  }
+  a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: flex;
+    margin: 5px 0;
+    span {
+      flex: 6;
+    }
+    i {
+      flex: 1;
+      text-align: right;
+    }
+  }
+
+  section {
+    display: flex;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 0.7rem;
+    color: #aaa;
+    span {
+      margin-right: 10px;
+    }
+  }
+}

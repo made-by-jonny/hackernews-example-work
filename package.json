@@ -7,7 +7,7 @@
     "test": "jest --watch",
     "dev": "next",
     "build": "next build",
-    "start": "node server.js"
+    "start": "next start"
   },
   "husky": {
     "hooks": {
@@ -20,8 +20,10 @@
     "axios": "^0.19.0",
     "husky": "^4.2.3",
     "metascraper": "^5.11.6",
+    "moment": "^2.24.0",
     "next": "^9.3.0",
     "open-graph-scraper": "^3.6.2",
+    "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "sass": "^1.26.2"
