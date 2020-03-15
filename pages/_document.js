@@ -11,6 +11,11 @@ class MyDocument extends Document {
       <Html>
         <head>
           <title>Hackernew | latest 20 articles</title>
+          <link
+            rel="icon"
+            type="image/png"
+            href="/images/hackernews-logo.svg"
+          />
           <meta name="description" content="" />
           <meta name="viewport" content="width=device-width" />
           <link rel="stylesheet" href="https://use.typekit.net/sva8vem.css" />
