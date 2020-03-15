@@ -17,13 +17,6 @@ body,
   height: 100%;
 }
 
-a {
-  color: #3a3a39;
-  &:hover {
-    color: #000;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -45,13 +38,35 @@ h6 {
   font-family: Verdana, Geneva, sans-serif;
 }
 
-.block-list {
+a {
+  color: #3a3a39;
+  &:hover {
+    color: #000;
+  }
+}
+
+.card-list {
+  overflow-x: auto;
   padding: 1rem 0;
   margin: 0;
+  display: flex;
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  @media (min-width: 826px) {
+    flex-wrap: wrap;
+    padding: 0;
+    padding-left: 0;
+  }
+}
+
+.block-list {
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 98%;
   list-style: none;
   font-family: poynter-oldstyle-text, serif;
   font-weight: 700;
-  padding-left: 10px;
 }
 
 @media (min-width: 1000px) {
