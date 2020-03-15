@@ -22,3 +22,13 @@ Push code to destination and run, or if you have a CI process these steps will n
 - npm install
 - npm run build
 - npm run start
+
+## Tests
+
+#### Run unit tests
+
+- npm run test
+
+#### Run coverage
+
+- npm run test:coverage
