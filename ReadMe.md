@@ -10,7 +10,7 @@
 
 Easiest way to deploy the code base is through [Zeit's Now ](https://zeit.co)
 
-- npm install now
+- npm i -g now@latest
 - make sure your in the project dir and run "now" in the terminal and this will take you through the steps needed
 
 I have already hosted the project [here](https://hackernews-test.madebyjonny.now.sh)
