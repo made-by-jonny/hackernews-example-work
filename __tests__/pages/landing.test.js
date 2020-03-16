@@ -303,6 +303,20 @@ describe("landing page tests", () => {
     expect(genericPosts).toEqual(8);
   });
 
+  test("landing page should render error message without passing props error", async () => {
+    const { container } = render(<Landing />);
+    const h3messate = container.querySelector("h3").textContent;
+
+    expect(h3messate).toEqual("There was an issue loading recent posts");
+  });
+
+  test("RenderPosts should render error message when passed no params", async () => {
+    const { container } = render(<RenderPosts />);
+    const h3messate = container.querySelector("h3").textContent;
+
+    expect(h3messate).toEqual("There was an issue loading recent posts");
+  });
+
   test("landing page should run and show error message", async () => {
     const { container } = render(<Landing posts={[]} />);
     const h3messate = container.querySelector("h3").textContent;

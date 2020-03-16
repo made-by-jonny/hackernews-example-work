@@ -46,6 +46,12 @@ test("Header List renders without error", async () => {
   expect(list).toBe(3);
 });
 
+test("Header List renders without error when there is no params", async () => {
+  const { container } = render(<HeaderList />);
+  const list = [...container.querySelectorAll("li")].length;
+  expect(list).toBe(0);
+});
+
 test("Header List renders more posts when default max_post is changed", async () => {
   const { container } = render(<HeaderList posts={posts} max_posts={1} />);
   const list = [...container.querySelectorAll("li")].length;

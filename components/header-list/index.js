@@ -1,6 +1,6 @@
 import HeaderCard from "../header-card";
 
-const HeaderList = ({ posts, max_posts = 4 }) => (
+const HeaderList = ({ posts = [], max_posts = 4 }) => (
   <article className="latest-articles">
     <ul id="very-latest-list" className="card-list">
       {posts.slice(0, max_posts).map((props, index) => {

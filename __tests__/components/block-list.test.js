@@ -67,6 +67,12 @@ test("Block List renders without error", async () => {
   expect(list).toBe(1);
 });
 
+test("Block List renders without error when there is no params", async () => {
+  const { container } = render(<BlockList />);
+  const list = [...container.querySelectorAll("li")].length;
+  expect(list).toBe(0);
+});
+
 test("Block List renders more posts when default start_post is changed", async () => {
   const { container } = render(<BlockList posts={posts} start_post={0} />);
   const list = [...container.querySelectorAll("li")].length;
