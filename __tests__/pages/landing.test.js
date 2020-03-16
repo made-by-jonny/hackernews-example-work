@@ -1,7 +1,7 @@
 import React from "react";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import Landing from "../../pages/index";
+import Landing, { RenderPosts } from "../../pages/index";
 
 const posts = [
   {
@@ -290,28 +290,23 @@ jest.mock("../../utils/api", () => ({
 
 describe("landing page tests", () => {
   test("landing page should run without error", async () => {
-    await Landing.getInitialProps({});
+    const props = await Landing.getInitialProps({});
 
     const { container } = render(<Landing posts={posts} />);
-    const h1Text = container.querySelector("h1").innerHTML;
     const veryLatest = [...container.querySelectorAll("#very-latest-list li")]
       .length;
     const genericPosts = [...container.querySelectorAll("#read-more-list li")]
       .length;
 
-    expect(h1Text).toEqual("Latest News");
+    expect(props).toEqual({ posts });
     expect(veryLatest).toEqual(4);
     expect(genericPosts).toEqual(8);
   });
 
-  test("landing page should runs without posts doesn't error", async () => {
-    const { container } = render(<Landing />);
-    const veryLatest = [...container.querySelectorAll("#very-latest-list li")]
-      .length;
-    const genericPosts = [...container.querySelectorAll("#read-more-list li")]
-      .length;
+  test("landing page should run and show error message", async () => {
+    const { container } = render(<Landing posts={[]} />);
+    const h3messate = container.querySelector("h3").textContent;
 
-    expect(veryLatest).toEqual(0);
-    expect(genericPosts).toEqual(0);
+    expect(h3messate).toEqual("There was an issue loading recent posts");
   });
 });

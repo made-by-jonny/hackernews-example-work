@@ -69,6 +69,11 @@ a {
   font-weight: 700;
 }
 
+.error {
+  color: red;
+  text-align: center;
+}
+
 @media (min-width: 1000px) {
   #__next {
     max-width: 1075px;

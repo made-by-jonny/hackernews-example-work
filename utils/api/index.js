@@ -14,7 +14,7 @@ export const getIds = async (postType = "newstories", start = 0, end = 10) => {
 };
 
 export const getItems = async (ids = []) => {
-  if (ids.length === 0) return ids;
+  if (ids.length === 0) return [];
   try {
     const rawPosts = await Promise.all(
       ids.map(async id => await api.get(`/item/${id}.json?print=pretty`))
