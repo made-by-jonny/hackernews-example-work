@@ -5,52 +5,136 @@ import Landing from "../../pages/index";
 
 const posts = [
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   },
   {
-    title: "111",
-    url: "https://fake.com"
+    by: "bookofjoe",
+    descendants: 0,
+    id: 22582812,
+    score: 1,
+    time: 1584271451,
+    title:
+      "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+    type: "story",
+    url: "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
   }
 ];
 jest.mock("../../utils/api", () => ({
@@ -58,52 +142,148 @@ jest.mock("../../utils/api", () => ({
   getItems: () =>
     Promise.resolve([
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       },
       {
-        title: "111",
-        url: "https://fake.com"
+        by: "bookofjoe",
+        descendants: 0,
+        id: 22582812,
+        score: 1,
+        time: 1584271451,
+        title:
+          "Coronary Sinus Neuropeptide Y Levels&Adverse Outcomes in Patients W Stable CHF",
+        type: "story",
+        url:
+          "https://jamanetwork.com/journals/jamacardiology/fullarticle/2757539"
       }
     ])
 }));

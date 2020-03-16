@@ -18,12 +18,12 @@ const BlockCard = ({ url, title, published_at, comments, author }) => (
   </li>
 );
 
-BlockCard.prototype = {
-  url: PropTypes.string.required,
-  title: PropTypes.string.required,
-  published_at: PropTypes.number.required,
-  comments: PropTypes.number.required,
-  author: PropTypes.string.required
+BlockCard.propTypes = {
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  published_at: PropTypes.number.isRequired,
+  comments: PropTypes.number.isRequired,
+  author: PropTypes.string.isRequired
 };
 
 export default BlockCard;

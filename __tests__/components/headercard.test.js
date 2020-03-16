@@ -16,8 +16,18 @@ const post = {
 };
 
 test("HeaderCard renders without error", async () => {
-  const { container } = render(<HeaderCard {...post} />);
-  const title = container.querySelector("a > h3").textContent;
+  const { by, descendants, time, title, url } = post;
+  const { container } = render(
+    <HeaderCard
+      index={1}
+      url={url}
+      title={title}
+      published_at={time}
+      comments={descendants}
+      author={by}
+    />
+  );
+  const headerTitle = container.querySelector("a > h3").textContent;
 
-  expect(title).toBe(post.title);
+  expect(headerTitle).toBe(post.title);
 });

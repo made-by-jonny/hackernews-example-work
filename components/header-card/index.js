@@ -18,13 +18,13 @@ const HeaderCard = ({ title, url, comments, published_at, author, index }) => (
   </li>
 );
 
-HeaderCard.prototype = {
-  url: PropTypes.string.required,
-  title: PropTypes.string.required,
-  index: PropTypes.number.required,
-  published_at: PropTypes.number.required,
-  comments: PropTypes.number.required,
-  author: PropTypes.string.required
+HeaderCard.propTypes = {
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+  published_at: PropTypes.number.isRequired,
+  comments: PropTypes.number.isRequired,
+  author: PropTypes.string.isRequired
 };
 
 export default HeaderCard;

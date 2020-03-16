@@ -16,8 +16,17 @@ const post = {
 };
 
 test("BlockCard renders without error", async () => {
-  const { container } = render(<BlockCard {...post} />);
-  const title = container.querySelector("a > h3").textContent;
+  const { by, descendants, time, title, url } = post;
+  const { container } = render(
+    <BlockCard
+      url={url}
+      title={title}
+      published_at={time}
+      comments={descendants}
+      author={by}
+    />
+  );
+  const linkTitle = container.querySelector("a > h3").textContent;
 
-  expect(title).toBe(post.title);
+  expect(linkTitle).toBe(post.title);
 });
